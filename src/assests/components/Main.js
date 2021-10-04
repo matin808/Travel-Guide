@@ -47,7 +47,7 @@ function Main() {
           <div>
             <h1 className = "main_places-heading"> Get To Know About</h1>
             <Row className = "places_row">
-              <Col sm="4">
+              <Col sm="4" className = "main_col">
                 <Card>
                   <CardImg top width="100%" src={Hotel} alt="Card image cap" />
                   <CardBody>
@@ -57,12 +57,12 @@ function Main() {
                       natural lead-in to additional content. This content is a
                       little bit longer.
                     </CardText>
-                    <Button>Button</Button>
+                    <Button outline color="success" size="lg" >Explore More</Button>
                   </CardBody>
                 </Card>
               </Col>
 
-              <Col sm="4">
+              <Col sm="4" className = "main_col">
                 <Card>
                   <CardImg
                     bottom
@@ -77,12 +77,12 @@ function Main() {
                       natural lead-in to additional content. This content is a
                       little bit longer.
                     </CardText>
-                    <Button>Button</Button>
+                    <Button outline color="success" size="lg" >Explore More</Button>
                   </CardBody>
                 </Card>
               </Col>
 
-              <Col sm="4">
+              <Col sm="4" className = "main_col">
                 <Card>
                   <CardImg
                     bottom
@@ -97,7 +97,7 @@ function Main() {
                       natural lead-in to additional content. This content is a
                       little bit longer.
                     </CardText>
-                    <Button>Button</Button>
+                    <Button outline color="success" size="lg" >Explore More</Button>
                   </CardBody>
                 </Card>
               </Col>
