@@ -34,12 +34,12 @@ const HomeNavbar = (props) => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav_link" href="/services">
+              <NavLink className="nav_link" href="/advisor">
                 Advisior
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink className="nav_link" href="/contact">
+              <NavLink className="nav_link" href="/info">
                 Info
               </NavLink>
             </NavItem>

@@ -3,7 +3,33 @@
     color : #f4f4f4;
     padding : 4rem 0;
 }
-.footer a{
+
+.footer h1{
+    color : rgb(186, 247, 186);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer_about{
+    font-size: 1.3rem;
+    width : 100%;
+}
+
+.footer_links{
     text-decoration: none;
-    color : #fff
+    color : #fff;
+    font-size: 1.3rem;
+}
+
+.footer_links:hover{
+    color : lightgreen;
+}
+
+.footer_no{
+    text-decoration: none;
+    color : #fff;
+    font-size: 1.1rem;
+}
+
+.footer_no:hover{
+    color : lightgreen;
 }

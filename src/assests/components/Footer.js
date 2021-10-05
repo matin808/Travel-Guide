@@ -9,20 +9,20 @@ function Footer() {
             <Row>
                 <Col sm="6">
                     <h1>About</h1>
-                    <p>This is T.E Project made by students of Theem College Of Engineering
+                    <p className = "footer_about">This is T.E Project made by students of Theem College Of Engineering
                         for guiding people to beautiful places surrounding them.
                     </p>
                 </Col>
                 <Col  sm="3">
                 <h1>links</h1>
-                <a href = "/"> Home</a><br />
-                <a href = "/"> Advisor</a><br />
-                <a href = "/"> Info</a>
+                <a className = "footer_links" href = "/"> Home</a><br />
+                <a className = "footer_links" href = "/"> Advisor</a><br />
+                <a className = "footer_links" href = "/"> Info</a>
                   
                 </Col>
                 <Col  sm="3">
                 <h1>Contact</h1>
-                  <p>Email : traveladvisor@gmail.com</p>
+                  <p>Email : <a className = "footer_no" href="mailto:matinkadri841@gmail.com">traveladvisor@gmail.com</a></p>
                   <p>Address : Mumbai, India</p>
                 </Col>
                 
