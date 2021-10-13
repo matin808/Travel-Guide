@@ -1,0 +1,48 @@
+.travel-reviews-img{
+    width : 100%;
+     max-height : 90vh; 
+    /* background-position: center;
+    background-size: cover; */
+    opacity: 1;
+    position: relative;
+}
+
+.travel-reviews_main{
+    position: absolute;
+    width : 80%;
+    top : 40%;
+    text-align: center;
+    margin : 0 7rem;
+}
+
+.travel-reviews_heading{
+    color : rgb(0, 0, 0);
+    font-size: 3rem;
+    opacity: 0.9;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.travel-reviews_main button{
+    color: #020202 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.4rem;
+    background: transparent;
+    padding: 0.7rem;
+    border: 2px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    width: 27%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border-radius: 2rem;
+    margin: 0.5rem 0;
+
+}
+
+.travel-reviews_main button:hover{
+    color: #000000 !important;
+    background: #aaece7;
+    transition: all 0.4s ease 0s;
+}

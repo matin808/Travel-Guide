@@ -5,6 +5,7 @@ import MainImg from "../images/main.png";
 import Hotel from "../images/hotel.jpg";
 import Restaurant from "../images/restaurant.jpg";
 import Attraction from "../images/attraction.jpg";
+import {Link} from "react-router-dom"
 import {
   Card,
   CardBody,
@@ -27,7 +28,9 @@ function Main() {
               Travelling to your destination is never a place, but a new way of
               seeing things.{" "}
             </p>
+            <Link to = "/advisor">
             <button>get Started</button>
+            </Link>
           </div>
           <div className="main_right">
             <img src={MainImg} alt="home_img" />
