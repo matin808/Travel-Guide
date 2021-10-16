@@ -13,7 +13,6 @@ function TravelReviews() {
             <button>BE A STORY TELLER</button>
             </Link>
             </div>
-
             
 
        </div>

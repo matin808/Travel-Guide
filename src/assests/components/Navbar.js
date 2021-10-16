@@ -26,7 +26,7 @@ const HomeNavbar = (props) => {
         </NavbarBrand>
 
         <NavbarToggler className="nav_toggler" onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        <Collapse className = "nav_tog" isOpen={isOpen} navbar>
           <Nav className="ms-auto header__links" navbar>
             <NavItem>
               <NavLink className="nav_link" href="/">

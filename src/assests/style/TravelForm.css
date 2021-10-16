@@ -1,21 +1,30 @@
 .travelform{
     margin : 0.5rem 1.5rem;
-    
+       
 }
 .travelform_main{
     color : #355f26; 
     padding: 1.5rem;
     margin : 1rem 2rem;
     border-radius: 1rem;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    
-    
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    
+}
+
+.travelForm_instruction{
+     margin-top: 1.2rem;
+      line-height: 1rem;
+    font-size: 1.1rem;
+  
+}
+
+.travelForm_heading{
+    color :rgb(52, 99, 59);
+    font-family:serif;
 }
 
 .travelform_form{
     display: flex;
     position: relative;
-    width : 100%;
     padding : 2rem;
     background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
@@ -23,7 +32,128 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.travelform_form2{
-    
+
+.travel_form_btn {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    width : 30%;
+   }
+   
+   .travel_form_btn:hover {
+    background-color: #1cb678;
+    box-shadow: 0px 15px 20px rgba(23, 141, 94, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+   }
+   
+   .travel_form_btn:active {
+    transform: translateY(-1px);
+   }
+
+
+
+   .travelform_backbtn {
+    display: flex;
+    height: 2.7rem;
+    width: 6rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeeeee4b;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    border: none;
+    background: rgb(205, 255, 196);
+   }
+   
+   .travelform_backbtn > svg {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 1rem;
+    transition: all 0.4s ease-in;
+   }
+   
+   .travelform_backbtn:hover > svg {
+    font-size: 1.1em;
+    transform: translateX(-5px);
+   }
+   
+   .travelform_backbtn:hover {
+    /* box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff; */
+    transform: translateY(-2px);
+   }
+
+   .travelForm_anc{
+       text-decoration: none;
+   }
+
+   Label{
+       margin-top: 0.5rem;
+       margin-left : 0.3rem;
+       font-size: 1.1rem;
+       color : rgb(52, 99, 59);
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
+.inputform{
+    min-width : 100%;
+    border-radius:  1.2rem;
+    outline:#1cb678;
+    padding : 0.5rem;
+    font-family: sans-serif;
+    border: none;
+    caret-color: #1cb678;
+    margin-top : 0.3rem;
+}
+
+@media only screen and (max-width: 550px) { 
+    .travel_form_btn {
+        width : 60%;
+       }
+}
+
+@media only screen and (max-width: 400px) {
+    .inputform{
+        min-width : 90%;
+        border-radius:  1.2rem;
+        padding : 0.5rem;
+        
+    }
+    .travelform_form{
+        display: flex;
+        position: relative;
+        padding-left : 1rem;
+    }
+
+    .travel_form_btn {
+        width : 60%;
+       }
+}
+
+
+@media only screen and (max-width: 350px) {
+    .inputform{
+        min-width : 80%;
+        border-radius:  1.2rem;
+        padding : 0.5rem;
+        
+    }
+    .travelform_form{
+        display: flex;
+        position: relative;
+        padding-left : 1rem;
+    }
 
 }

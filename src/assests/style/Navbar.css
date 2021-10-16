@@ -19,3 +19,17 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin : 0 0.5rem
 }
+
+
+@media only screen and (max-width: 600px) {
+    .nav_toggler{
+        margin-right  : 0.5rem;
+    }
+    
+    .nav_link{
+        font-size: 1.8rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin-left :  1.2rem
+    }
+
+}

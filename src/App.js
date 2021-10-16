@@ -4,6 +4,7 @@ import Main from "../src/assests/components/Main";
 import Footer from "../src/assests/components/Footer";
 import TravelReviews from "../src/assests/components/TravelReviews";
 import TravelForm from "../src/assests/components/TravelForm";
+import Review from "../src/assests/components/Review";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
@@ -22,7 +23,8 @@ function App() {
           </Route>
           <Route path="/advisor">
           <Navbar />  
-          <TravelReviews />      
+          <TravelReviews />  
+          <Review />    
           </Route>
           <Route path="/">
             <Navbar />
