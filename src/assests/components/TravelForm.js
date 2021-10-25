@@ -26,12 +26,12 @@ function TravelForm(props) {
           <br />
 
           <h4 className="">Points To Remember While helping us with Reviews</h4>
-          <p className="travelForm_instruction">✅ Please Give A Genuine Review </p>
+          <p className="travelForm_instruction"> Please Give A Genuine Review </p>
           <p className="travelForm_instruction">
-            ✅ Please Provide Proper Link Of the Location via Google Map{" "}
+             Please Provide Proper Link Of the Location via Google Map{" "}
           </p>
-          <p className="travelForm_instruction">✅ Please Give A Genuine Review </p>
-          <p className="travelForm_instruction">✅ Please Give A Genuine Review </p>
+          <p className="travelForm_instruction">Please Give A Genuine Review </p>
+          <p className="travelForm_instruction"> Please Give A Genuine Review </p>
           <a
             target="_blank"
             rel="noreferrer"

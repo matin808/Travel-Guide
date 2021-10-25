@@ -16,7 +16,9 @@
     font-size: 1.1rem;
   
 }
-
+.travelForm_instruction::before{
+    content: "\2714";
+}
 .travelForm_heading{
     color :rgb(52, 99, 59);
     font-family:serif;

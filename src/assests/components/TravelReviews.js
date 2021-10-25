@@ -10,7 +10,7 @@ function TravelReviews() {
             <div className = "travel-reviews_main">
             <h1 className = "travel-reviews_heading">Travelling  leaves you speechless, then turns you into a storyteller.</h1>
             <Link to = "/travel-form">
-            <button>BE A STORY TELLER</button>
+            <button>Be A Story Teller</button>
             </Link>
             </div>
             

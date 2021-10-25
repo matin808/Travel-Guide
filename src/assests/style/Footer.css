@@ -34,3 +34,23 @@
     color : lightgreen;
 }
 
+
+
+@media only screen and (max-width: 600px) {
+
+.footer{
+    
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    padding : 1.5rem 0;
+}
+
+.footer h1{
+    margin: 0.5rem 0;
+}
+
+.footer_no{
+    font-size: 1.2rem;
+}
+
+}
