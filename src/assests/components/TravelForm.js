@@ -1,10 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import { Jumbotron, Container } from "reactstrap";
 import "../style/TravelForm.css";
-import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
-import { Link } from "react-router-dom";
+import {  Form, FormGroup, Label, Input, FormText } from "reactstrap";
+import firebase from "../../util/firebase";
 
 function TravelForm(props) {
+  const [name, setName] = useState("");
+  const [location, setLocation] = useState("");
+  const [state, setState] = useState("");
+  const [city, setCity] = useState("");
+  const [reviewtxt, setReviewtxt] = useState("");
+  const [disc, setDisc] = useState("");
+
+  const handleName = (e) => {
+    setName(e.target.value);
+  }
+  const handleLocation = (e) => {
+    setLocation(e.target.value);
+  }
+  const handleState = (e) => {
+    setState(e.target.value);
+  }
+  const handleCity = (e) => {
+    setCity(e.target.value);
+  }
+  const handleReview = (e) => {
+    setReviewtxt(e.target.value);
+  }
+  const handleDisc = (e) => {
+    setDisc(e.target.value);
+  }
+
+  const createReview = (e) => {
+    e.preventDefault();
+    const reviewRef = firebase.database().ref("Review");
+    const review = {
+      name,
+      location,
+      state,
+      city,
+      reviewtxt,
+      disc,
+    };
+    reviewRef.push(review);
+  }
+
   return (
     <div className="travelform">
       <Jumbotron fluid>
@@ -54,6 +94,8 @@ function TravelForm(props) {
                 type="name"
                 name="name"
                 placeholder="e.g John smt"
+                onChange = {handleName}
+                value = {name}
               />
             </FormGroup>
             <FormGroup>
@@ -63,6 +105,8 @@ function TravelForm(props) {
                 type="text"
                 name="location"
                 placeholder="Paste location link here"
+                onChange = {handleLocation}
+                value = {location}
               />
             </FormGroup>
             <FormGroup>
@@ -72,6 +116,8 @@ function TravelForm(props) {
                 type="text"
                 name="state"
                 placeholder="e.g Goa"
+                onChange = {handleState}
+                value = {state}
               />
             </FormGroup>
             <FormGroup>
@@ -81,6 +127,8 @@ function TravelForm(props) {
                 type="text"
                 name="city"
                 placeholder="e.g Panji"
+                onChange = {handleCity}
+                value = {city}
               />
             </FormGroup>
             <FormGroup>
@@ -90,18 +138,21 @@ function TravelForm(props) {
                 type="text"
                 name="rating"
                 placeholder="e.g 4/5"
+                onChange = {handleReview}
+                value = {reviewtxt}
               />
             </FormGroup>
             <FormGroup></FormGroup>
             <FormGroup>
               <Label for="exampleText">Remark</Label><br />
-              {/* <Input  name="text" id="exampleText" /> */}
               <textarea
                 type="textarea"
                 className="inputform"
                 rows="7"
                 placeholder="Write about what you like the most about the place you visited Do mention about hotels, restaurant, attractions you like the most"
-              />
+              onChange = {handleDisc}
+              value = {disc}
+             />
             </FormGroup>{" "}
             <br />
             <FormGroup>
@@ -113,7 +164,7 @@ function TravelForm(props) {
             </FormGroup>
             <br />
             {/* FORM TWO */}
-            <button className="travel_form_btn">Submit</button>
+            <button onClick = {createReview} className="travel_form_btn">Submit</button>
           </Form>
         </div>
       </div>

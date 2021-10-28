@@ -3,19 +3,30 @@
 
 .review_header {
   display: flex;
-  margin: 2rem 2rem;
+  margin: 1.5rem 2rem;
 }
 
-h1 {
-  color: #7c795d;
-
-  font-size: 45px;
-  line-height: 48px;
+.review_header-main {
+  color: #292b28;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 35px;
   
 }
 
 .review_header-search {
   outline: none;
   width: 50%;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
+  border-radius: 1.5rem;
+  outline : none;
+  border : 1px solid #2a582e;
+  padding-left : 0.7rem;
+  font-family: 'Lato', sans-serif;  
+
 }
+
+
+
+
+
