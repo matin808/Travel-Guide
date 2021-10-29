@@ -101,12 +101,18 @@
        text-decoration: none;
    }
 
-   Label{
+   .required{
        margin-top: 0.5rem;
        margin-left : 0.3rem;
        font-size: 1.1rem;
        color : rgb(52, 99, 59);
        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+   .required::after{
+    content:" *";
+    color: red;
+    margin-left : -0.3rem;
+    
    }
 
 .inputform{

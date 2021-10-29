@@ -3,6 +3,8 @@ import { Jumbotron, Container } from "reactstrap";
 import "../style/TravelForm.css";
 import {  Form, FormGroup, Label, Input, FormText } from "reactstrap";
 import firebase from "../../util/firebase";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function TravelForm(props) {
   const [name, setName] = useState("");
@@ -33,16 +35,48 @@ function TravelForm(props) {
 
   const createReview = (e) => {
     e.preventDefault();
-    const reviewRef = firebase.database().ref("Review");
-    const review = {
-      name,
-      location,
-      state,
-      city,
-      reviewtxt,
-      disc,
-    };
-    reviewRef.push(review);
+
+    if(name === "" || location === "" || state === "" || city === "" || reviewtxt === "" || disc === ""){
+      toast.error('Please fill all the required details', {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        });
+
+    }else {
+      const reviewRef = firebase.database().ref("Review");
+      const review = {
+        name,
+        location,
+        state,
+        city,
+        reviewtxt,
+        disc,
+      };
+      reviewRef.push(review);
+
+      toast.success('Successfully Submitted!', {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        });
+        setName("");
+        setLocation("");
+        setState("");
+        setCity("");
+        setReviewtxt("");
+        setDisc("");
+    }
+
+    
   }
 
   return (
@@ -88,7 +122,7 @@ function TravelForm(props) {
             <br />
             <h1 className = "travelForm_heading">Your Review</h1>
             <FormGroup>
-              <Label for="exampleEmail">Name</Label> <br />
+              <Label className = "required" for="exampleEmail">Name</Label> <br />
               <input
                 className="inputform"
                 type="name"
@@ -96,10 +130,11 @@ function TravelForm(props) {
                 placeholder="e.g John smt"
                 onChange = {handleName}
                 value = {name}
+                required
               />
             </FormGroup>
             <FormGroup>
-              <Label for="examplePassword">Location </Label><br />
+              <Label className = "required" for="examplePassword">Location</Label><br />
               <input
                 className="inputform"
                 type="text"
@@ -107,10 +142,11 @@ function TravelForm(props) {
                 placeholder="Paste location link here"
                 onChange = {handleLocation}
                 value = {location}
+                required
               />
             </FormGroup>
             <FormGroup>
-              <Label for="examplePassword">State</Label><br />
+              <Label className = "required" for="examplePassword">State</Label><br />
               <input
                 className="inputform"
                 type="text"
@@ -118,10 +154,11 @@ function TravelForm(props) {
                 placeholder="e.g Goa"
                 onChange = {handleState}
                 value = {state}
+                required
               />
             </FormGroup>
             <FormGroup>
-              <Label for="examplePassword">City</Label><br />
+              <Label className = "required" for="examplePassword">City</Label><br />
               <input
                 className="inputform"
                 type="text"
@@ -129,10 +166,11 @@ function TravelForm(props) {
                 placeholder="e.g Panji"
                 onChange = {handleCity}
                 value = {city}
+                required
               />
             </FormGroup>
             <FormGroup>
-              <Label for="examplePassword">Overall Review</Label><br />
+              <Label className = "required" for="examplePassword">Overall Review</Label><br />
               <input
                 className="inputform"
                 type="text"
@@ -140,11 +178,12 @@ function TravelForm(props) {
                 placeholder="e.g 4/5"
                 onChange = {handleReview}
                 value = {reviewtxt}
+                required
               />
             </FormGroup>
             <FormGroup></FormGroup>
             <FormGroup>
-              <Label for="exampleText">Remark</Label><br />
+              <Label className = "required" for="exampleText">Remark</Label><br />
               <textarea
                 type="textarea"
                 className="inputform"
@@ -165,6 +204,19 @@ function TravelForm(props) {
             <br />
             {/* FORM TWO */}
             <button onClick = {createReview} className="travel_form_btn">Submit</button>
+            <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                />
+                {/* Same as */}
+                <ToastContainer />
           </Form>
         </div>
       </div>

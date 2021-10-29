@@ -44,13 +44,23 @@
     transition: all 0.4s ease 0s;
 }
 
+.travel-reviews-img-mb{
+    display: none;
+}
+
 @media only screen and (max-width: 600px) { 
     .travel-reviews-img{
-         min-width : 100%; 
+         
+        display : none;
+       
+    }
+    .travel-reviews-img-mb{
+        display: block;
+        min-width : 100%; 
          min-height : 90vh; 
         opacity: 1; 
         position: relative;
-       
+
     }
 
     .travel-reviews_heading{
@@ -82,3 +92,4 @@
     }
 
 }
+
