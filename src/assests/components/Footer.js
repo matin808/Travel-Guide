@@ -16,13 +16,13 @@ function Footer() {
                 <Col  sm="3">
                 <h1>links</h1>
                 <a className = "footer_links" href = "/"> Home</a><br />
-                <a className = "footer_links" href = "/"> Advisor</a><br />
-                <a className = "footer_links" href = "/"> Info</a>
+                <a className = "footer_links" href = "/advisor"> Advisor</a><br />
+                <a className = "footer_links" href = "/info"> Info</a>
                   
                 </Col>
                 <Col  sm="3">
                 <h1>Contact</h1>
-                  <p>Email : <a className = "footer_no" href="mailto:matinkadri841@gmail.com">traveladvisor@gmail.com</a></p>
+                  <p>Email : <a className = "footer_no" href="mailto:matinkadri841@gmail.com">yatraguide@gmail.com</a></p>
                   <p>Address : Mumbai, India</p>
                 </Col>
                 

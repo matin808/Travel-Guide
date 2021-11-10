@@ -22,7 +22,7 @@ const HomeNavbar = (props) => {
       <Navbar light expand="md">
         <NavbarBrand href="/">
           <img className="home_icon" src={Earth} alt="" />
-          <span className = "nav_header">Travel Guide</span>
+          <span className = "nav_header">Yatra Guide</span>
         </NavbarBrand>
 
         <NavbarToggler className="nav_toggler" onClick={toggle} />

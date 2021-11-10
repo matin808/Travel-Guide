@@ -104,12 +104,12 @@ function TravelForm(props) {
           <p className="travelForm_instruction">
              Please Provide Proper Link Of the Location via Google Map{" "}
           </p>
-          <p className="travelForm_instruction">Please Give A Genuine Review </p>
-          <p className="travelForm_instruction"> Please Give A Genuine Review </p>
+          <p className="travelForm_instruction">If possible please provide the photo of the place you've visited</p>
+          <p className="travelForm_instruction"> Please avoid any spelling mistake of city and states.</p>
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://goo.gl/maps/h86FE5EjvsDEPjTK7"
+            href="hhttps://www.google.com/maps"
           >
             Get Map Link
           </a>

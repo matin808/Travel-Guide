@@ -19,12 +19,14 @@ function App() {
           </Route>
           <Route path="/travel-form">
           <Navbar />  
-          <TravelForm />      
+          <TravelForm />  
+          <Footer />    
           </Route>
           <Route path="/advisor">
           <Navbar />  
           <TravelReviews />  
-          <Review />    
+          <Review /> 
+          <Footer />   
           </Route>
           <Route path="/">
             <Navbar />

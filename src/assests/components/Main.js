@@ -23,7 +23,7 @@ function Main() {
       <Container>
         <div className="main">
           <div className="main_left">
-            <h1>Your Travel Guide</h1>
+            <h1>Your Yatra Guide</h1>
             <p>
               Travelling to your destination is never a place, but a new way of
               seeing things.{" "}
@@ -57,11 +57,9 @@ function Main() {
                   <CardBody>
                     <CardTitle tag="h3" className = "main_explore_heading">Hotel</CardTitle>
                     <CardText className = "main_explore_desc">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                    With the help of our hotel reviews redefine your expectations. For a hotel experience, unlike the rest.
                     </CardText>
-                    <Button outline color="success" size="md" >Explore More</Button>
+                    <Link to =  "/advisor"><Button outline color="success" size="md" >Explore More</Button></Link>
                   </CardBody>
                 </Card>
               </Col>
@@ -77,11 +75,9 @@ function Main() {
                   <CardBody>
                     <CardTitle tag="h3" className = "main_explore_heading">Restaurant</CardTitle>
                     <CardText className = "main_explore_desc">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                    Check out our restaurant reviews and enjoy the pleasure of best and variety of foods on your plate.
                     </CardText>
-                    <Button outline color="success" size="md" >Explore More</Button>
+                    <Link to =  "/advisor"><Button outline color="success" size="md" >Explore More</Button></Link>
                   </CardBody>
                 </Card>
               </Col>
@@ -97,11 +93,9 @@ function Main() {
                   <CardBody>
                     <CardTitle tag="h3" className = "main_explore_heading">Attraction</CardTitle>
                     <CardText className = "main_explore_desc">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content. This content is a
-                      little bit longer.
+                    Get quality reviews for the attractive places to visit and complete your travel experience with us.
                     </CardText>
-                    <Button outline color="success" size="md" >Explore More</Button>
+                    <Link to =  "/advisor"><Button outline color="success" size="md" >Explore More</Button></Link>
                   </CardBody>
                 </Card>
               </Col>

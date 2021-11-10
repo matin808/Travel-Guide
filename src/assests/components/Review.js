@@ -2,12 +2,10 @@ import React, {useEffect, useState} from 'react';
 import "../style/Review.css";
 import firebase from "../../util/firebase";
 
-
 function Review() {
 
     const [reviewList, setreviewList] = useState();
     const [searchTerm, setsearchTerm] = useState("");
-
 
     useEffect(() => {
         const reviewRef = firebase.database().ref("Review");
@@ -33,10 +31,7 @@ function Review() {
             <h1 className = "review_header-main">Search Review By City :</h1>
             <input className = "review_header-search" onChange = {handleSearch} type = "text" />
         </div>
-
-
-                <h1> Your Review</h1>
-               
+                <h1 className = "reviewMain_heading"> Your Review</h1> 
                {reviewList ? reviewList.filter((val) => {
                    if(searchTerm === ""){
                        return val;
@@ -47,11 +42,11 @@ function Review() {
                    }
                }).map((rd) => (
                 <div className="reviews_maindata">
-                           <h3 className = ""><label className = "need_label" >Name : </label> {rd.name}</h3>
-                         <span>Location Link : </span>  <a target = "_blank" rel="noreferrer" href = {rd.location} className = "needBlood__heading">Location Link</a>
-                          <h3 className = "needBlood__heading"><label className = "need_label" >State : </label> {rd.state}</h3>
-                          <h3 className = "needBlood__heading"><label className = "need_label" >City : </label> {rd.city}</h3>
-                          <h3 className = "needBlood__heading"><label className = "need_label" >Review : </label> {rd.disc}</h3>              
+                         <h3 className = "reviewLabel__heading"><label className = "need_label" >Name : </label> {rd.name}</h3>
+                         <span className = "reviewspananc_heading">Location Link : </span>  <a target = "_blank" rel="noreferrer" href = {rd.location} className = "reviewLabelanc__heading">Location Link</a>
+                          <h3 className = "reviewLabel__heading"><label className = "need_label" >State : </label> {rd.state}</h3>
+                          <h3 className = "reviewLabel__heading"><label className = "need_label" >City : </label> {rd.city}</h3>
+                          <h3 className = "reviewLabel__heading"><label className = "need_label" >Review : </label> {rd.disc}</h3>              
                        </div>   
                )) : "" }
                
