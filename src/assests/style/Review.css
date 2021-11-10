@@ -11,11 +11,12 @@
 }
 
 .review_header-main {
-  color: #292b28;
-  font-family: 'Lato', sans-serif;
   font-weight: 600;
-  font-size: 35px;
-  
+  font-size: 40px;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;  
+  color: rgb(43, 95, 46);
+  margin-left : 1rem;
 }
 
 .review_header-search {
@@ -23,15 +24,25 @@
   width: 50%;
   margin-left: 1rem;
   border-radius: 1.5rem;  
-  border : 1px solid #2a582e;
-  padding-left : 0.7rem;
-  font-family: 'Lato', sans-serif; 
   background-color:transparent;
+  border : 3px solid #66b866;
+    padding : 0.7rem;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
 
 }
 
 .reviewMain_heading{
   text-align: center;
+  width : 100%;
+  display: block; 
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;  
+  font-size: 2.5rem;
+  margin-top : 2rem;
+  color: rgb(43, 95, 46);
+  margin-top: 4rem;
+
 }
 
 .reviews_maindata{
@@ -45,8 +56,85 @@
   
 }
 
-
+.reviewLabel__heading{
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;  
+  font-size: 1.7rem;
+  color :rgb(43, 95, 46);
+}
 
 .reviewspananc_heading{
-  font-size: 1.3rem;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;  
+  font-size: 1.6rem;
+  color :rgb(43, 95, 46);
+  
+}
+
+.reviews_maindata a{
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;  
+  font-size: 1.6rem;
+  color :rgb(49, 133, 141);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {  
+ 
+  .review{
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #e4d0e4 0%, #c3ebf0 100%);  
+    padding : 0.3rem;
+  }
+  
+  .review_header {
+    display: block;
+    margin: 2rem 1.5rem;
+     
+  }
+
+  .reviews_maindata{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding : 1.3rem;
+    background-color: #a3f5c9;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    max-width : 1200px;
+    margin : 2rem 0.5rem;
+    border-radius: 20px;
+    
+  }
+ 
+  .review_header-main{
+      width : 100%;
+      display: block; 
+      font-family: 'Urbanist', sans-serif;
+      font-weight: 700;  
+      color: rgb(43, 95, 46);
+     
+  }
+
+  .review_header-search {
+    width: 90%;
+    margin-left: 0rem;
+    margin-top : 0.3rem;
+    border-radius: 1rem;  
+    border : 3px solid #66b866;
+    padding : 0.7rem;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;
+    background-color:transparent;
+  
+  }
+ 
+  .reviewMain_heading{
+    width : 100%;
+    display: block; 
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 700;  
+    font-size: 2.5rem;
+    margin-top : 0;
+    color: rgb(43, 95, 46);
+    
+   }
+
 }

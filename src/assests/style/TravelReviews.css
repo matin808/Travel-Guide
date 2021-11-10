@@ -19,6 +19,7 @@
     opacity: 0.9;
     font-family: 'Urbanist', sans-serif;
     font-weight: 700;
+
 }
 
 .travel-reviews_main button{
@@ -49,32 +50,29 @@
 }
 
 @media only screen and (max-width: 600px) { 
-    .travel-reviews-img{
-         
+    .travel-reviews-img{        
         display : none;
-       
     }
     .travel-reviews-img-mb{
         display: block;
-        min-width : 100%; 
-         min-height : 90vh; 
+        width : 100%; 
+        min-height : 90vh; 
         opacity: 1; 
         position: relative;
-
     }
 
     .travel-reviews_heading{
         text-align: center;
         color : rgb(31, 29, 29);
-        font-size: 1.9rem;
+        font-size: 2.2rem;
         opacity: 1;
-        font-weight: 900;   
+        font-weight: 800;   
     }
 
     .travel-reviews_main{
         position: absolute;
         width : 90%;
-        top : 40%;
+        top : 37%;
         left : 0;
         text-align: center;
         margin : 0 1rem;
@@ -83,9 +81,9 @@
     .travel-reviews_main button{
         font-size: 1.2rem;
         padding: 0.6rem 0.1rem;
-        border: 1px solid #494949 !important;
+        border: 3px solid #494949 !important;
         width: 75%;
-        font-weight: 500;
+        font-weight: 800;
         border-radius: 2rem;
       
     

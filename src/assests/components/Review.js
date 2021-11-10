@@ -28,8 +28,8 @@ function Review() {
         <div className = "review">
 
         <div className = "review_header">
-            <h1 className = "review_header-main">Search Review By City :</h1>
-            <input className = "review_header-search" onChange = {handleSearch} type = "text" />
+            <h1 className = "review_header-main">Search Review By City</h1>
+            <input className = "review_header-search" onChange = {handleSearch} type = "text" placeholder = "City Name" />
         </div>
                 <h1 className = "reviewMain_heading"> Your Review</h1> 
                {reviewList ? reviewList.filter((val) => {
@@ -43,7 +43,7 @@ function Review() {
                }).map((rd) => (
                 <div className="reviews_maindata">
                          <h3 className = "reviewLabel__heading"><label className = "need_label" >Name : </label> {rd.name}</h3>
-                         <span className = "reviewspananc_heading">Location Link : </span>  <a target = "_blank" rel="noreferrer" href = {rd.location} className = "reviewLabelanc__heading">Location Link</a>
+                         <span className = "reviewspananc_heading">Location Link : </span>  <a target = "_blank" rel="noreferrer" href = {rd.location} className = "reviewLabelanc__heading">Click here</a>
                           <h3 className = "reviewLabel__heading"><label className = "need_label" >State : </label> {rd.state}</h3>
                           <h3 className = "reviewLabel__heading"><label className = "need_label" >City : </label> {rd.city}</h3>
                           <h3 className = "reviewLabel__heading"><label className = "need_label" >Review : </label> {rd.disc}</h3>              

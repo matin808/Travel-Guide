@@ -109,7 +109,7 @@ function TravelForm(props) {
           <a
             target="_blank"
             rel="noreferrer"
-            href="hhttps://www.google.com/maps"
+            href="https://www.google.com/maps"
           >
             Get Map Link
           </a>
